@@ -38,7 +38,7 @@
                         android:singleLine="true"
                         android:textSize="@dimen/load_action"
                         android:textColor="#8BCEE5"
-                        android:text="불러오는 중..."
+                        android:text="@string/def_load"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
                 </android.support.percent.PercentRelativeLayout>
@@ -53,7 +53,7 @@
                         android:singleLine="true"
                         android:textSize="@dimen/load_locate"
                         android:textColor="@android:color/white"
-                        android:text="아누비스 신전"
+                        android:text="@string/def_location"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
                 </android.support.percent.PercentRelativeLayout>
@@ -119,33 +119,33 @@
         android:layout_height="12dp" />
     <Button
         android:id="@+id/btnSelect"
-        android:text="이미지 선택"
+        android:text="@string/select_image"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <EditText
         android:padding="@dimen/activity_horizontal_margin"
         android:id="@+id/edAction"
         android:singleLine="true"
-        android:hint="불러오는 중..."
+        android:hint="@string/def_load"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <EditText
         android:padding="@dimen/activity_horizontal_margin"
         android:id="@+id/edLocate"
         android:singleLine="true"
-        android:hint="아누비스 신전"
+        android:hint="@string/def_location"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <EditText
         android:padding="@dimen/activity_horizontal_margin"
         android:id="@+id/edTip"
         android:singleLine="true"
-        android:hint="팁"
+        android:hint="@string/def_tip"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <Button
         android:id="@+id/btnSave"
-        android:text="저장"
+        android:text="@string/save_image"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 </LinearLayout>

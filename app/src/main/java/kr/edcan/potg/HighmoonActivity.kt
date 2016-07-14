@@ -29,7 +29,7 @@ class HighmoonActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_highmoon)
-        title = "석양이 진다"
+        title = resources.getString(R.string.act_highmoon)
         supportActionBar!!.setDisplayHomeAsUpEnabled(true)
         supportActionBar!!.setHomeAsUpIndicator(R.drawable.ic_arrow);
         btnSelect.setOnClickListener {
@@ -43,15 +43,15 @@ class HighmoonActivity : AppCompatActivity() {
                 mCurrentView!!.setInEdit(false);
             mainLay.isDrawingCacheEnabled = true
             val bitmap = mainLay.drawingCache
-            val folder = File("${android.os.Environment.getExternalStorageDirectory()}/DCIM/고오급 짤")
+            val folder = File("${android.os.Environment.getExternalStorageDirectory()}/DCIM/"+resources.getString(R.string.folder))
             var file : File? = null
             try {
                 if (!folder.exists()){
                     folder.mkdirs()
                 }
-                file = File(folder, "석양이 진다${System.currentTimeMillis() % 1000}.png")
+                file = File(folder, resources.getString(R.string.act_highmoon) + "${System.currentTimeMillis() % 1000}.png")
                 while(file!!.exists()){
-                    file = File(folder, "석양이 진다${System.currentTimeMillis() % 1000}.png")
+                    file = File(folder, resources.getString(R.string.act_highmoon) + "${System.currentTimeMillis() % 1000}.png")
                 }
                 if (!file.exists()) {
                     file.createNewFile()

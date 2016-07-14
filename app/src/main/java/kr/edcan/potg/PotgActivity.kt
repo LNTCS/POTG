@@ -28,7 +28,7 @@ class PotgActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_potg)
-        title = "POTG"
+        title = resources.getString(R.string.act_potg)
         supportActionBar!!.setDisplayHomeAsUpEnabled(true)
         supportActionBar!!.setHomeAsUpIndicator(R.drawable.ic_arrow);
         applyFilter(tvName,BlurMaskFilter.Blur.INNER)
@@ -43,7 +43,7 @@ class PotgActivity : AppCompatActivity() {
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
                 tvTitle.text = s.toString()
                 if(s.toString().length == 0) {
-                    tvTitle.text = "최고의 플레이"
+                    tvTitle.text = resources.getString(R.string.def_potg)
                 }
             }
         })
@@ -55,11 +55,11 @@ class PotgActivity : AppCompatActivity() {
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
                 tvName.text = s.toString()
                 if(s.toString().length == 0) {
-                    tvName.text = "도지"
+                    tvName.text = resources.getString(R.string.def_name)
                 }
                 tvNameBG.text = s.toString()
                 if(s.toString().length == 0) {
-                    tvNameBG.text = "도지"
+                    tvNameBG.text = resources.getString(R.string.def_name)
                 }
             }
         })
@@ -71,7 +71,7 @@ class PotgActivity : AppCompatActivity() {
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
                 tvSub.text = s.toString()
                 if(s.toString().length == 0) {
-                    tvSub.text = "댕댕이"
+                    tvSub.text = resources.getString(R.string.def_role)
                 }
             }
         })
@@ -84,7 +84,7 @@ class PotgActivity : AppCompatActivity() {
         btnSave.setOnClickListener {
             mainLay.isDrawingCacheEnabled = true
             val bitmap = mainLay.drawingCache
-            val folder = File("${android.os.Environment.getExternalStorageDirectory()}/DCIM/고오급 짤")
+            val folder = File("${android.os.Environment.getExternalStorageDirectory()}/DCIM/"+resources.getString(R.string.folder))
             var file : File? = null
             try {
                 if (!folder.exists()){

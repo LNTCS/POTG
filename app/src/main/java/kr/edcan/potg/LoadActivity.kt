@@ -30,7 +30,7 @@ class LoadActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_load)
-        title = "로딩화면"
+        title = resources.getString(R.string.act_load)
         supportActionBar!!.setDisplayHomeAsUpEnabled(true)
         supportActionBar!!.setHomeAsUpIndicator(R.drawable.ic_arrow);
         val gradient = intArrayOf(
@@ -87,7 +87,7 @@ class LoadActivity : AppCompatActivity() {
         btnSave.setOnClickListener {
             mainLay.isDrawingCacheEnabled = true
             val bitmap = mainLay.drawingCache
-            val folder = File("${android.os.Environment.getExternalStorageDirectory()}/DCIM/고오급 짤")
+            val folder = File("${android.os.Environment.getExternalStorageDirectory()}/DCIM/" + resources.getString(R.string.folder))
             var file : File? = null
             try {
                 if (!folder.exists()){

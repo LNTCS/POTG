@@ -45,7 +45,7 @@
         android:layout_height="12dp" />
     <Button
         android:id="@+id/btnSelect"
-        android:text="이미지 선택"
+        android:text="@string/select_image"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <LinearLayout
@@ -67,7 +67,7 @@
     </LinearLayout>
     <Button
         android:id="@+id/btnSave"
-        android:text="저장"
+        android:text="@string/save_image"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 </LinearLayout>

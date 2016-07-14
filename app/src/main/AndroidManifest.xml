@@ -20,14 +20,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity"/>
+        <activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity" />
         <activity
             android:name=".PotgActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name=".HighmoonActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".LoadActivity"
+        <activity
+            android:name=".LoadActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".KillActivity"
             android:screenOrientation="portrait" />
     </application>
 

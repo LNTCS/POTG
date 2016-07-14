@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">고오급 짤 제조기</string>
+    <string name="select_image">이미지 선택</string>
+    <string name="add_text">추가</string>
+    <string name="save_image">저장</string>
+    <string name="def_location">아누비스 신전</string>
+    <string name="def_load">불러오는 중...</string>
+    <string name="def_tip">팁:</string>
+    <string name="act_load">로딩화면</string>
+    <string name="def_potg">최고의 플레이</string>
+    <string name="def_name">도지</string>
+    <string name="def_role">댕댕이</string>
+    <string name="act_potg">최고의 플레이</string>
+    <string name="act_highmoon">석양이 진다</string>
+    <string name="folder">고오급 짤</string>
+    <string name="permission">합성한 짤을 저장하기 위해 쓰기 권한이 필요합니다</string>
 </resources>

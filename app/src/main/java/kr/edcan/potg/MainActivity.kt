@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        title = "고오급 짤 제조기"
+        title = resources.getString(R.string.app_name)
         applyFilter(tvName, BlurMaskFilter.Blur.INNER)
         applyFilter(tvNameBG, BlurMaskFilter.Blur.INNER)
         applyFilter(tvTitle, BlurMaskFilter.Blur.SOLID)
@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
 
     fun permission(){
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE) !== PackageManager.PERMISSION_GRANTED) {
-            Toast.makeText(applicationContext, "합성한 짤을 저장하기 위해 쓰기 권한이 필요합니다", Toast.LENGTH_SHORT).show()
+            Toast.makeText(applicationContext, resources.getString(R.string.permission), Toast.LENGTH_SHORT).show()
             ActivityCompat.requestPermissions(this,
                     arrayOf<String>(Manifest.permission.WRITE_EXTERNAL_STORAGE),
                     REQUEST_CODE_WRITE)
@@ -48,7 +48,7 @@ class MainActivity : AppCompatActivity() {
                 mainHighmoon.setOnClickListener { startActivity(Intent(applicationContext, HighmoonActivity::class.java)) }
                 mainLoad.setOnClickListener { startActivity(Intent(applicationContext, LoadActivity::class.java)) }
             } else {
-                Toast.makeText(applicationContext, "앱 쓰기 싫음 말던가", Toast.LENGTH_SHORT).show()
+                Toast.makeText(applicationContext, "we cant access to sdcard", Toast.LENGTH_SHORT).show()
             }
         }
     }
