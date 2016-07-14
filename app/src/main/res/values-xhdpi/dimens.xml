@@ -1,0 +1,10 @@
+<resources>
+    <dimen name="load_action">32sp</dimen>
+    <dimen name="load_locate">19sp</dimen>
+    <dimen name="load_tip">6.85sp</dimen>
+    <dimen name="load_tip_cont">4.57sp</dimen>
+
+    <dimen name="potg_title">17sp</dimen>
+    <dimen name="potg_name">32sp</dimen>
+    <dimen name="potg_name_margin">-4dp</dimen>
+</resources>

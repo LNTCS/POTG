@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <net.soulwolf.widget.ratiolayout.widget.RatioRelativeLayout
+        android:id="@+id/mainLay"
+        app:datumRatio="datumWidth"
+        app:widthRatio="16"
+        app:heightRatio="9"
+        android:background="#aaa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/mainImg"
+            android:src="@drawable/ic_placeholder"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <RelativeLayout
+            android:background="#6d5D2A00"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <RelativeLayout
+            android:id="@+id/stickerRoot"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <android.support.percent.PercentRelativeLayout
+            android:layout_marginLeft="-1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/mcHand"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/highnoon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </android.support.percent.PercentRelativeLayout>
+        </net.soulwolf.widget.ratiolayout.widget.RatioRelativeLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="12dp" />
+    <Button
+        android:id="@+id/btnSelect"
+        android:text="이미지 선택"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/stickerDead"
+            android:src="@drawable/dead"
+            android:scaleType="centerInside"
+            android:layout_width="72dp"
+            android:layout_height="72dp" />
+        <ImageButton
+            android:id="@+id/stickerNormal"
+            android:src="@drawable/normal"
+            android:scaleType="centerInside"
+            android:layout_width="72dp"
+            android:layout_height="72dp" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnSave"
+        android:text="저장"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

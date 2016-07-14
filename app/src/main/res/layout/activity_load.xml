@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <net.soulwolf.widget.ratiolayout.widget.RatioRelativeLayout
+        android:id="@+id/mainLay"
+        app:datumRatio="datumWidth"
+        app:widthRatio="16"
+        app:heightRatio="9"
+        android:background="#aaa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/mainImg"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <android.support.percent.PercentRelativeLayout
+            android:gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.percent.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <android.support.percent.PercentRelativeLayout
+                    android:id="@+id/tvActionLay"
+                    app:layout_marginBottomPercent="7%"
+                    android:layout_marginTop="@dimen/potg_name_margin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <kr.edcan.potg.view.FontTextViewLoad
+                        android:id="@+id/tvAction"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="end"
+                        app:layout_marginEndPercent="4%"
+                        android:singleLine="true"
+                        android:textSize="@dimen/load_action"
+                        android:textColor="#8BCEE5"
+                        android:text="불러오는 중..."
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </android.support.percent.PercentRelativeLayout>
+                <android.support.percent.PercentRelativeLayout
+                    android:layout_width="match_parent"
+                    app:layout_marginBottomPercent="3.5%"
+                    android:layout_height="wrap_content">
+                    <kr.edcan.potg.view.FontTextViewBright
+                        android:id="@+id/tvLocate"
+                        android:layout_alignParentBottom="true"
+                        app:layout_marginLeftPercent="65.3%"
+                        android:singleLine="true"
+                        android:textSize="@dimen/load_locate"
+                        android:textColor="@android:color/white"
+                        android:text="아누비스 신전"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </android.support.percent.PercentRelativeLayout>
+                <android.support.percent.PercentRelativeLayout
+                    android:id="@+id/layTip"
+                    android:visibility="gone"
+                    android:background="#99000000"
+                    app:layout_marginTopPercent="71%"
+                    app:layout_marginEndPercent="64.9%"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <android.support.percent.PercentRelativeLayout
+                        app:layout_marginLeftPercent="26.3%"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <kr.edcan.potg.view.FontTextView
+                            android:id="@+id/loadTip"
+                            app:layout_marginTopPercent="2%"
+                            android:textSize="@dimen/load_tip"
+                            android:textColor="@android:color/white"
+                            android:text="팁:"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                        <android.support.percent.PercentRelativeLayout
+                            android:layout_below="@+id/loadTip"
+                            app:layout_marginTopPercent="1%"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <RelativeLayout
+                                android:id="@+id/loadTipDiv"
+                                android:layout_centerVertical="true"
+                                android:background="#88ffffff"
+                                android:layout_width="3px"
+                                android:layout_height="4.3sp"/>
+                            <kr.edcan.potg.view.FontTextView
+                                android:id="@+id/tvTip"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/loadTipDiv"
+                                app:layout_marginStartPercent="2%"
+                                app:layout_marginBottomPercent="3%"
+                                app:layout_marginEndPercent="1%"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/load_tip_cont"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </android.support.percent.PercentRelativeLayout>
+                    </android.support.percent.PercentRelativeLayout>
+                </android.support.percent.PercentRelativeLayout>
+                <ImageView
+                    android:layout_alignParentBottom="true"
+                    android:src="@drawable/ow"
+                    app:layout_marginBottomPercent="4.5%"
+                    app:layout_marginStartPercent="3.3%"
+                    app:layout_widthPercent="6.8%"
+                    app:layout_heightPercent="12%"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp" />
+            </android.support.percent.PercentRelativeLayout>
+        </android.support.percent.PercentRelativeLayout>
+    </net.soulwolf.widget.ratiolayout.widget.RatioRelativeLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="12dp" />
+    <Button
+        android:id="@+id/btnSelect"
+        android:text="이미지 선택"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:padding="@dimen/activity_horizontal_margin"
+        android:id="@+id/edAction"
+        android:singleLine="true"
+        android:hint="불러오는 중..."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:padding="@dimen/activity_horizontal_margin"
+        android:id="@+id/edLocate"
+        android:singleLine="true"
+        android:hint="아누비스 신전"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:padding="@dimen/activity_horizontal_margin"
+        android:id="@+id/edTip"
+        android:singleLine="true"
+        android:hint="팁"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btnSave"
+        android:text="저장"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
