@@ -14,7 +14,6 @@
         android:layout_height="wrap_content">
         <ImageView
             android:id="@+id/mainImg"
-            android:src="@drawable/ic_placeholder"
             android:scaleType="fitXY"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
@@ -35,7 +34,6 @@
                 android:id="@+id/mcHand"
                 android:adjustViewBounds="true"
                 android:scaleType="centerInside"
-                android:src="@drawable/highnoon"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
         </android.support.percent.PercentRelativeLayout>

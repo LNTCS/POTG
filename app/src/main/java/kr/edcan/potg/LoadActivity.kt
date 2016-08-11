@@ -37,7 +37,7 @@ class LoadActivity : AppCompatActivity() {
                 Color.parseColor("#e08BCEE5"),
                 Color.parseColor("#aa8BCEE5"),
                 Color.parseColor("#888BCEE5"),
-                Color.parseColor("#338BCEE5"))
+                Color.parseColor("#558BCEE5"))
         val shader = LinearGradient(0f, 0f, 0f, tvAction.textSize,
                 gradient,
                 floatArrayOf(0f, 0.2f, 0.5f, 1f), Shader.TileMode.CLAMP)
@@ -50,7 +50,6 @@ class LoadActivity : AppCompatActivity() {
             }
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
                 tvAction.text = s.toString()
-//                tvTitle_s.text = s.toString()
             }
         })
         edLocate.addTextChangedListener(object : TextWatcher {
@@ -60,7 +59,6 @@ class LoadActivity : AppCompatActivity() {
             }
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
                 tvLocate.text = s.toString()
-//                tvName_s.text = s.toString()
             }
         })
         edTip.addTextChangedListener(object : TextWatcher {
@@ -70,7 +68,6 @@ class LoadActivity : AppCompatActivity() {
             }
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
                 tvTip.text = s.toString()
-//                tvSub_s.text = s.toString()
                 if(s.toString().length == 0) {
                     layTip.visibility = View.GONE
                 }else{

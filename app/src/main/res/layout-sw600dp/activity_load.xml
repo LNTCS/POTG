@@ -86,7 +86,7 @@
                                     app:layout_marginTopPercent="2%"
                                     android:textSize="@dimen/load_tip"
                                     android:textColor="@android:color/white"
-                                    android:text="팁:"
+                                    android:text="@string/def_tip"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content" />
                                 <android.support.percent.PercentRelativeLayout

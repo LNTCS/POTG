@@ -32,6 +32,8 @@
             android:screenOrientation="portrait" />
         <activity android:name=".KillActivity"
             android:screenOrientation="portrait" />
+        <activity android:name=".TTVisorActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

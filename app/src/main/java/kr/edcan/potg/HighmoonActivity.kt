@@ -32,6 +32,11 @@ class HighmoonActivity : AppCompatActivity() {
         title = resources.getString(R.string.act_highmoon)
         supportActionBar!!.setDisplayHomeAsUpEnabled(true)
         supportActionBar!!.setHomeAsUpIndicator(R.drawable.ic_arrow);
+        Glide.with(applicationContext).load(R.drawable.highnoon)
+                .signature(StringSignature((System.currentTimeMillis() / (24 * 60 * 60 * 1000)).toString()))
+                .diskCacheStrategy(DiskCacheStrategy.NONE)
+                .skipMemoryCache(true)
+                .into(mcHand)
         btnSelect.setOnClickListener {
             var intent = Intent();
             intent.type = "image/*";

@@ -21,6 +21,129 @@
         <android.support.percent.PercentRelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/killViewLay"
+                android:gravity="center"
+                app:layout_marginTopPercent="70%"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/killLay1"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <kr.edcan.potg.view.FontTextViewColorBright
+                        android:id="@+id/killTxt1"
+                        android:textSize="10sp"
+                        android:text="　"
+                        android:textColor="@android:color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <net.soulwolf.widget.ratiolayout.widget.RatioImageView
+                        android:id="@+id/killImg1"
+                        android:layout_toRightOf="@+id/killTxt"
+                        android:src="@drawable/ic_death"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/killLay2"
+                    android:visibility="gone"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <kr.edcan.potg.view.FontTextViewColorBright
+                        android:id="@+id/killTxt2"
+                        android:textSize="10sp"
+                        android:textColor="@android:color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <net.soulwolf.widget.ratiolayout.widget.RatioImageView
+                        android:id="@+id/killImg2"
+                        android:layout_toRightOf="@+id/killTxt"
+                        android:src="@drawable/ic_death"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/killLay3"
+                    android:visibility="gone"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <kr.edcan.potg.view.FontTextViewColorBright
+                        android:id="@+id/killTxt3"
+                        android:textSize="10sp"
+                        android:textColor="@android:color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <net.soulwolf.widget.ratiolayout.widget.RatioImageView
+                        android:id="@+id/killImg3"
+                        android:layout_toRightOf="@+id/killTxt"
+                        android:src="@drawable/ic_death"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/killLay4"
+                    android:visibility="gone"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <kr.edcan.potg.view.FontTextViewColorBright
+                        android:id="@+id/killTxt4"
+                        android:textSize="10sp"
+                        android:textColor="@android:color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <net.soulwolf.widget.ratiolayout.widget.RatioImageView
+                        android:id="@+id/killImg4"
+                        android:layout_toRightOf="@+id/killTxt"
+                        android:src="@drawable/ic_death"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/killLay5"
+                    android:visibility="gone"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <kr.edcan.potg.view.FontTextViewColorBright
+                        android:id="@+id/killTxt5"
+                        android:textSize="10sp"
+                        android:textColor="@android:color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <net.soulwolf.widget.ratiolayout.widget.RatioImageView
+                        android:id="@+id/killImg5"
+                        android:layout_toRightOf="@+id/killTxt"
+                        android:src="@drawable/ic_death"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/killLay6"
+                    android:visibility="gone"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <kr.edcan.potg.view.FontTextViewColorBright
+                        android:id="@+id/killTxt6"
+                        android:textSize="10sp"
+                        android:textColor="@android:color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <net.soulwolf.widget.ratiolayout.widget.RatioImageView
+                        android:id="@+id/killImg6"
+                        android:layout_toRightOf="@+id/killTxt"
+                        android:src="@drawable/ic_death"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
         </android.support.percent.PercentRelativeLayout>
     </net.soulwolf.widget.ratiolayout.widget.RatioRelativeLayout>
     <ScrollView
@@ -39,22 +162,153 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
             <Button
-                android:id="@+id/btnAdd"
-                android:text="@string/add_text"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-            <LinearLayout
-                android:id="@+id/edtLay"
-                android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-            </LinearLayout>
-            <Button
                 android:id="@+id/btnSave"
                 android:text="@string/save_image"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/edtLay1"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:weightSum="10"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/edName1"
+                        android:layout_weight="8"
+                        android:singleLine="true"
+                        android:hint="@string/in_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/edScore1"
+                        android:layout_weight="2"
+                        android:singleLine="true"
+                        android:inputType="numberDecimal"
+                        android:hint="@string/in_score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/edtLay2"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:weightSum="10"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/edName2"
+                        android:layout_weight="8"
+                        android:singleLine="true"
+                        android:hint="@string/in_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/edScore2"
+                        android:layout_weight="2"
+                        android:singleLine="true"
+                        android:inputType="numberDecimal"
+                        android:hint="@string/in_score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/edtLay3"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:weightSum="10"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/edName3"
+                        android:layout_weight="8"
+                        android:singleLine="true"
+                        android:hint="@string/in_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/edScore3"
+                        android:layout_weight="2"
+                        android:singleLine="true"
+                        android:inputType="numberDecimal"
+                        android:hint="@string/in_score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/edtLay4"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:weightSum="10"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/edName4"
+                        android:layout_weight="8"
+                        android:singleLine="true"
+                        android:hint="@string/in_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/edScore4"
+                        android:layout_weight="2"
+                        android:singleLine="true"
+                        android:inputType="numberDecimal"
+                        android:hint="@string/in_score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/edtLay5"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:weightSum="10"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/edName5"
+                        android:layout_weight="8"
+                        android:singleLine="true"
+                        android:hint="@string/in_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/edScore5"
+                        android:layout_weight="2"
+                        android:singleLine="true"
+                        android:inputType="numberDecimal"
+                        android:hint="@string/in_score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/edtLay6"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:weightSum="10"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/edName6"
+                        android:layout_weight="8"
+                        android:singleLine="true"
+                        android:hint="@string/in_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/edScore6"
+                        android:layout_weight="2"
+                        android:singleLine="true"
+                        android:inputType="numberDecimal"
+                        android:hint="@string/in_score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

@@ -3,6 +3,8 @@
     <string name="select_image">select image</string>
     <string name="add_text">add</string>
     <string name="save_image">save</string>
+    <string name="in_name">name</string>
+    <string name="in_score">score</string>
     <string name="def_location">Location</string>
     <string name="def_load">Loading...</string>
     <string name="def_tip">Tip:</string>
@@ -11,7 +13,10 @@
     <string name="def_name">Doge</string>
     <string name="def_role">Dog</string>
     <string name="act_potg">Play Of The Game</string>
+    <string name="act_kill">kill</string>
     <string name="act_highmoon">Deadeye</string>
+    <string name="act_visor">Tactical Visor</string>
     <string name="folder">ow</string>
     <string name="permission">we need permission for save image to sdcard</string>
+    <string name="language">en</string>
 </resources>

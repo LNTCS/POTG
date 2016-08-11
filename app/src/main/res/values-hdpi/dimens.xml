@@ -2,8 +2,8 @@
 <resources>
     <dimen name="load_action">27sp</dimen>
     <dimen name="load_locate">17sp</dimen>
-    <dimen name="load_tip">5.78sp</dimen>
-    <dimen name="load_tip_cont">3.85sp</dimen>
+    <dimen name="load_tip">6.78sp</dimen>
+    <dimen name="load_tip_cont">4.85sp</dimen>
 
     <dimen name="potg_name">27sp</dimen>
     <dimen name="potg_name_margin">-3dp</dimen>

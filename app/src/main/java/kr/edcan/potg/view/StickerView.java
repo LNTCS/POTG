@@ -47,7 +47,7 @@ public class StickerView extends ImageView {
     private int topBitmapHeight;
     private Paint localPaint;
     private int mScreenwidth, mScreenHeight;
-    private static final float BITMAP_SCALE = 0.7f;
+    private static float BITMAP_SCALE = 0.7f;
     private PointF mid = new PointF();
     private OperationListener operationListener;
     private float lastRotateDegree;
@@ -90,11 +90,22 @@ public class StickerView extends ImageView {
 
     private DisplayMetrics dm;
 
+    public void setScale(float MIN_SCALE, float MAX_SCALE) {
+        this.MIN_SCALE = MIN_SCALE;
+        this.MAX_SCALE = MAX_SCALE;
+    }
     //水平镜像
     private boolean isHorizonMirror = false;
 
     public StickerView(Context context, AttributeSet attrs) {
         super(context, attrs);
+        stickerId = 0;
+        init();
+    }
+
+    public StickerView(Context context, float BITMAP_SCALE) {
+        super(context);
+        this.BITMAP_SCALE = BITMAP_SCALE;
         stickerId = 0;
         init();
     }
